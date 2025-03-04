@@ -30,7 +30,7 @@ const Transaction = sequelize.define('Transaction', {
 });
 
 // Set up relationships
-CardBalance.hasMany(Transaction, { foreignKey: 'cardId' });
-Transaction.belongsTo(CardBalance, { foreignKey: 'cardId' });
+// CardBalance.hasMany(Transaction, { foreignKey: 'cardId' });
+// Transaction.belongsTo(CardBalance, { foreignKey: 'cardId' });
 
 module.exports = Transaction;
