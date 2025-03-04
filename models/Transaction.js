@@ -9,7 +9,7 @@ const Transaction = sequelize.define('Transaction', {
     autoIncrement: true
   },
   cardId: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.STRING,
     allowNull: false,
     field: 'card_id'
   },
