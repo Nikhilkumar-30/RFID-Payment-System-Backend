@@ -3,7 +3,7 @@ const sequelize = require('../config/database');
 
 const CardBalance = sequelize.define('CardBalance', {
   id: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true
   },
