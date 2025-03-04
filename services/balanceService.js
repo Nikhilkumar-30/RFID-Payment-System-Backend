@@ -6,7 +6,7 @@ class BalanceService {
       const cardBalance = await CardBalance.findOne({
         where: { cardId }
       });
-      return cardBalance?.balance ?? 0;
+      return cardBalance ? cardBalance.balance : 0;
     } catch (error) {
       throw new Error('Error fetching balance');
     }
